@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pfinanzas"
+version = "0.1.0"
+description = "Aplicacion de escritorio local para recibos, CFDI y reportes financieros."
+requires-python = ">=3.11"
+dependencies = [
+    "PySide6-Essentials>=6.8",
+    "Pillow>=10.0",
+    "pytesseract>=0.3.13",
+    "pandas>=2.2",
+    "openpyxl>=3.1",
+    "reportlab>=4.2",
+    "python-dateutil>=2.9",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[project.scripts]
+pfinanzas = "pfinanzas.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

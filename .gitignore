@@ -1,0 +1,66 @@
+# Entorno local
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Datos privados y sensibles
+data/*
+!data/.gitkeep
+!data/receipts/
+!data/receipts/.gitkeep
+!data/db/
+!data/db/.gitkeep
+!data/cfdi/
+!data/cfdi/.gitkeep
+exports/*
+!exports/.gitkeep
+*.sqlite
+*.sqlite3
+*.db
+*.csv
+*.xlsx
+*.xls
+*.pdf
+*.xml
+*.jpg
+*.jpeg
+*.png
+*.heic
+*.webp
+*.tif
+*.tiff
+
+# Configuracion privada
+.env
+.env.*
+*.local
+config.local.*
+secrets.*
+
+# Logs y archivos temporales
+logs/
+*.log
+tmp/
+temp/
+*.tmp
+
+# Empaquetado
+build/
+dist/
+*.egg-info/
+
+# Binarios locales descargados para OCR
+vendor/*
+
+# IDE / sistema
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
